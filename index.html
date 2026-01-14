@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lupa Tech | Segurança Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lupa Tech - Tecnologia e Segurança Digital em Juiz de Fora - MG.">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --azul: #2563eb;
+      --azul-claro: #93c5fd;
+      --fundo: #020617;
+      --card: #0f172a;
+      --texto: #e5e7eb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #1e293b, var(--fundo));
+      color: var(--texto);
+      scroll-behavior: smooth;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(2,6,23,0.85);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    nav h2 {
+      color: var(--azul);
+      font-weight: 600;
+    }
+
+    nav a {
+      color: var(--texto);
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 15px;
+      opacity: 0.8;
+    }
+
+    nav a:hover {
+      opacity: 1;
+      color: var(--azul-claro);
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 46px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    /* CARDS */
+    .cards {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: linear-gradient(160deg, var(--card), #020617);
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      color: var(--azul-claro);
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 8px;
+      opacity: 0.95;
+    }
+
+    /* SOBRE - TABELA MODERNA */
+    .about-grid {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .about-card {
+      background: linear-gradient(160deg, var(--card), #020617);
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+    }
+
+    .about-card h3 {
+      color: var(--azul-claro);
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    .about-card p {
+      font-size: 15px;
+      line-height: 1.7;
+      opacity: 0.9;
+    }
+
+    /* SOCIAL */
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .social-buttons a {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .social-buttons a:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 30px rgba(37,99,235,0.7);
+    }
+
+    .whatsapp { background: #25d366; }
+    .instagram {
+      background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>Lupa Tech</h2>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#dicas">Dicas de Segurança</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="center">
+  <h1>Segurança Digital</h1>
+  <p>Tecnologia, prevenção de golpes e proteção online</p>
+</section>
+
+<!-- DICAS -->
+<section id="dicas">
+  <h2 class="center">Dicas de Segurança</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Não baixe arquivos de sites não confiáveis</h3>
+      <p>Arquivos maliciosos podem roubar dados e senhas.</p>
+      <p><strong>Como identificar:</strong> sem HTTPS, anúncios excessivos, pop-ups.</p>
+    </div>
+
+    <div class="card">
+      <h3>Cuidado com links suspeitos</h3>
+      <p>Links falsos levam a páginas clonadas.</p>
+      <p><strong>Como identificar:</strong> domínio estranho, erros de escrita.</p>
+    </div>
+
+    <div class="card">
+      <h3>Phishing por mensagens</h3>
+      <p>Golpistas fingem ser bancos ou empresas.</p>
+      <p><strong>Como identificar:</strong> pedido de senha ou código.</p>
+    </div>
+
+    <div class="card">
+      <h3>Wi-Fi público é perigoso</h3>
+      <p>Seus dados podem ser interceptados.</p>
+      <p><strong>Como identificar:</strong> redes abertas sem senha.</p>
+    </div>
+
+    <div class="card">
+      <h3>Apps falsos</h3>
+      <p>Aplicativos clonados roubam informações.</p>
+      <p><strong>Como identificar:</strong> fora da Play Store, poucas avaliações.</p>
+    </div>
+
+    <div class="card">
+      <h3>Senhas fracas</h3>
+      <p>Facilitam invasões.</p>
+      <p><strong>Como identificar:</strong> uso de datas, nomes ou números simples.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="center">
+  <h2>Sobre a Lupa Tech</h2>
+
+  <div class="about-grid">
+    <div class="about-card">
+      <h3>Quem somos</h3>
+      <p>
+        A Lupa Tech atua com tecnologia e segurança digital,
+        focada em prevenção de golpes, proteção de dados
+        e conscientização online.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h3>Localização</h3>
+      <p>
+        📍 Brasil — Minas Gerais<br>
+        Juiz de Fora<br>
+        Bairro Borboleta<br>
+        Rua Luiz Kelmer, nº 3<br>
+        CEP 36035-500
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h3>Horário de atendimento</h3>
+      <p>
+        🕒 Segunda a sexta: 14h – 19h30<br>
+        🕒 Sábado: 13h – 16h<br>
+        ❌ Domingo: fechado
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="center">
+  <h2>Contato</h2>
+  <p>Fale com a Lupa Tech pelas redes sociais</p>
+
+  <div class="social-buttons">
+    <a class="whatsapp" href="https://wa.me/5532984073625" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a class="instagram" href="https://www.instagram.com/lupatech_" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Lupa Tech — Juiz de Fora, MG
+</footer>
+
+</body>
+</html>
